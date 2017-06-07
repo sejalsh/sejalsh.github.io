@@ -1,0 +1,23 @@
+/* Download Button (start) */
+
+.download-button {
+    display: inline-block;
+    padding: 14px;
+    border: 1px solid #ddd;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 30px;
+	margin: 10px;
+	width: 250px;
+    font-weight: 200;
+    font-size: 0.9rem;
+	text-align: center;
+}
+.download-button:focus,
+.download-button:hover {
+    border-color: #598AA1;
+    color: #598AA1;
+    outline: none;
+    text-decoration: none !important;
+}
+/* Download Button (end) */
