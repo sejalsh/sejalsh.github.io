@@ -26,7 +26,7 @@ li a,
     -webkit-transition: color 0.2s ease-out;
     -moz-transition: color 0.2s ease-out;
     transition: color 0.2s ease-out;
-/*    border-bottom: 1px solid #619bb9;*/
+    border-bottom: 1px solid #619bb9;
     padding-bottom: 1px;
 }
 p a:hover,
@@ -205,8 +205,6 @@ a.current:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(91, 138, 160, 0.5);
-    border-radius: 1.5em;
-    border: solid .65em #fff;
 }
 .thumbnail-hover a {
     position: absolute;
@@ -370,8 +368,6 @@ img {
 img {
     display: inline-block;
     vertical-align: middle;
-	border-radius: 1.5em;
-    padding: 10px;
 }
 [class*="block-grid-"] {
     display: block;
@@ -566,7 +562,7 @@ blockquote {
     direction: ltr;
 }
 a {
-    color: #619bb9;
+    color: #333d41;
     text-decoration: none;
     line-height: inherit;
 }
