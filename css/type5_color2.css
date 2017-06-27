@@ -23,9 +23,6 @@ li a,
     -webkit-transition: border 0.2s ease-out;
     -moz-transition: border 0.2s ease-out;
     transition: border 0.2s ease-out;
-    -webkit-transition: color 0.2s ease-out;
-    -moz-transition: color 0.2s ease-out;
-    transition: color 0.2s ease-out;
     border-bottom: 1px solid #619bb9;
     padding-bottom: 1px;
 }
@@ -55,7 +52,7 @@ div.lined-list ul {
     margin-left: 0;
 }
 .lined-list li strong {
-    font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", "Georgia", "Helvetica", Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: inherit;
@@ -87,7 +84,7 @@ div h3 {
     font-weight: bold;
 }
 div div h2 {
-    font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", "Georgia", "Helvetica", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1.5rem;
@@ -96,7 +93,7 @@ div div h2 {
     text-transform: none;
 }
 div div h3 {
-    font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", "Georgia", "Helvetica", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 1.3125rem;
@@ -116,7 +113,7 @@ header div.logo {
 }
 
 div div header h1 {
-    font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", "Georgia", "Helvetica", Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
@@ -131,7 +128,7 @@ div div header h1 a {
     color: #333d41;
 }
 div div header h2 {
-    font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", "Georgia", "Helvetica", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 0.75rem;
@@ -167,7 +164,7 @@ nav ul.inline-list-custom {
     margin-left: 0;
 }
 nav ul.inline-list-custom li {
-    font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", "Georgia", "Helvetica", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-style: italic;
     font-size: 0.9375rem;
@@ -216,7 +213,7 @@ a.current:hover {
     border: none;
 }
 .thumbnail-caption {
-    font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", "Georgia", "Helvetica", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 0.8rem;
@@ -273,7 +270,7 @@ footer ul {
     margin-left: 0;
 }
 footer li {
-    font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", "Georgia", "Helvetica", Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 0.75rem;
@@ -348,7 +345,7 @@ body {
     color: #333d41;
     padding: 0;
     margin: 0;
-    font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", "Georgia", "Helvetica", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     line-height: 1;
@@ -584,7 +581,7 @@ p {
 h1,
 h2,
 h3 {
-    font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", "Georgia", "Helvetica", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #333d41;
