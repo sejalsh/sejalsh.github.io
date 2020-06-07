@@ -89,6 +89,7 @@ html {
 
 body {
 	font-family: 'Proxima Nova', sans-serif;
+    text-rendering: optimizeLegibility;
     background: #fff;
 	color: #111;
     margin: 5.2rem 0 1em 0;
