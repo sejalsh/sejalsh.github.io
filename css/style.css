@@ -216,6 +216,7 @@ section:after {
     border-left: 1px solid none;
     text-align: center;
     padding: 1em 1.2em;
+    text-decoration: none;
 }
 .navbar a:hover {
 	color: #000;
