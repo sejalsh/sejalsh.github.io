@@ -211,8 +211,9 @@ section:after {
     margin-right: -0.5em;
 }
 .navbar a {
+    color:inherit;
     float: right;
-    color: #000 !important;
+    color: #000;
     border-left: 1px solid none;
     text-align: center;
     padding: 1em 1.2em;
