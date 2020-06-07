@@ -1,0 +1,91 @@
+
+.navigation-direction-sign {
+    position: fixed;
+    display: inline-block;
+    border: 0;
+    width: 2em;
+    height: 2em;
+    top: 45%;
+    z-index: 121;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    line-height: 2.175em;
+    background-color: #fff;
+    opacity: 0;
+    border-radius: 50%;
+   -moz-opacity: 0;
+    margin: 0.75em;
+    font-weight: 800;
+    
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.15);
+
+   -webkit-transition: opacity 0.3s linear, -webkit-transform 0.05s linear;
+   -moz-transition: opacity 0.3s linear, -mox-transform 0.05s linear;
+    -ms-transition: opacity 0.3s linear, -ms-transform 0.05s linear;
+     -o-transition: opacity 0.3s linear, -o-transform 0.05s linear;
+        transition: opacity 0.3s linear, transform 0.05s linear;
+}
+
+
+
+    .navigation-direction-sign.next {
+        right: 0;
+        -webkit-transform: translate(100%);
+           -moz-transform: translate(100%);
+            -ms-transform: translate(100%);
+             -o-transform: translate(100%);
+                transform: translate(100%);
+
+    }
+        .navigation-direction-sign.next::after {
+            content: "\2192";
+        }
+    .navigation-direction-sign.prev {
+        left: 0;
+        -webkit-transform: translate(-100%);
+        -moz-transform: translate(-100%);
+         -ms-transform: translate(-100%);
+          -o-transform: translate(-100%);
+             transform: translate(-100%);
+    }
+        .navigation-direction-sign.prev::after {
+            content: "\2190";
+        }
+    .navigation-direction-sign.visible {
+        opacity: 1;
+        -webkit-transform: translate(0);
+           -moz-transform: translate(0);
+            -ms-transform: translate(0);
+             -o-transform: translate(0);
+                transform: translate(0);
+
+    }
+
+
+/*
+.navigation-freezing-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+     opacity: 0.5;
+   -moz-opacity:0.5;
+   -khtml-opacity: 0.5;
+   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+   filter: alpha(opacity=50);
+}
+
+    .navigation-freezing-overlay::after {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        font-size: 32px;
+        text-align: center;
+        color: white;
+        content: "Loading..."
+    }*/

@@ -1,0 +1,267 @@
+.ball-container {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	opacity: 0.5
+}
+.ball-container>.path {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-animation: rotate 60s linear infinite;
+	animation: rotate 60s linear infinite;
+	width: 0;
+	height: 0
+}
+.ball-container>.path.-static {
+	transition: -webkit-transform 1s;
+	transition: transform 1s;
+	transition: transform 1s, -webkit-transform 1s;
+	-webkit-transform: translate(-50%, -50%) rotate(35deg);
+	transform: translate(-50%, -50%) rotate(35deg);
+	-webkit-animation: none;
+	animation: none
+}
+.ball-container>.path>.ball {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 0;
+	height: 0;
+	-webkit-transform: translateX(-115vw);
+	transform: translateX(-115vw);
+	transition: -webkit-transform 3s cubic-bezier(.81, .05, .355, 1);
+	transition: transform 3s cubic-bezier(.81, .05, .355, 1);
+	transition: transform 3s cubic-bezier(.81, .05, .355, 1), -webkit-transform 3s cubic-bezier(.81, .05, .355, 1);
+	will-change: transform
+}
+.-visited .ball-container>.path>.ball {
+	transition: none
+}
+@media (max-width:719px) {
+	.ball-container>.path>.ball {
+		-webkit-transform: translateX(-150vw);
+		transform: translateX(-150vw)
+	}
+}
+.ball-container>.path>.ball>.rotation {
+	position: absolute;
+	width: 0;
+	height: 0;
+	will-change: transform;
+	-webkit-animation: spinToSlow 60s linear;
+	animation: spinToSlow 60s linear
+}
+.-visited .ball-container>.path>.ball>.rotation, .ball-container>.path>.ball>.rotation.-holding {
+	-webkit-animation: rotate 30s linear infinite;
+	animation: rotate 30s linear infinite
+}
+.ball-container>.path>.ball>.rotation.-static {
+	transition: -webkit-transform 1s;
+	transition: transform 1s;
+	transition: transform 1s, -webkit-transform 1s;
+	-webkit-transform: translate(-50%, -50%) rotate(0);
+	transform: translate(-50%, -50%) rotate(0);
+	-webkit-animation: none;
+	animation: none
+}
+.ball-container>.path>.ball>.rotation>.states {
+	width: 48px;
+	height: 48px;
+	opacity: .675;
+	transition: opacity 2s;
+	-webkit-transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%, -50%) scale(1);
+	-webkit-animation: zoomBallStates 3s cubic-bezier(.81, .05, .355, 1);
+	animation: zoomBallStates 3s cubic-bezier(.81, .05, .355, 1);
+	position: relative
+}
+.-visited .ball-container>.path>.ball>.rotation>.states {
+	-webkit-animation: none;
+	animation: none
+}
+.ball-container>.path>.ball>.rotation>.states>.blur, .ball-container>.path>.ball>.rotation>.states>.start, .ball-container>.path>.ball>.rotation>.states>.stepped-blur {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+.ball-container>.path>.ball>.rotation>.states>.blur {
+	opacity: 1;
+	will-change: opacity
+}
+.ball-container>.path>.ball>.rotation>.states>.start {
+	opacity: 0;
+	will-change: opacity;
+	transition: opacity .25s
+}
+.-visited .ball-container>.path>.ball>.rotation>.states>.start {
+	transition: none
+}
+.state-loading.-init .ball-container {
+	opacity: 1;
+	transition: none
+}
+.state-loading.-init .ball-container>.path>.ball {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	transition: none
+}
+@media (max-width:719px) {
+	.state-loading.-init .ball-container>.path>.ball {
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+}
+.state-loading.-init .ball-container>.path>.ball>.rotation>.states {
+	-webkit-animation: none;
+	animation: none;
+	opacity: 0;
+	transition: opacity .2s;
+	-webkit-transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%, -50%) scale(1)
+}
+.state-loading.-init .ball-container>.path>.ball>.rotation>.states.-ready {
+	opacity: 1
+}
+.state-loading.-init .ball-container>.path>.ball>.rotation>.states>.blur {
+	opacity: 0
+}
+.state-loading.-init .ball-container>.path>.ball>.rotation>.states>.start {
+	opacity: 1;
+	transition: none
+}
+.state-loading.-init .ball-container.-animate>.path>.ball>.rotation>.states {
+	-webkit-animation: zoomBallStates 3s cubic-bezier(.81, .05, .355, 1);
+	animation: zoomBallStates 3s cubic-bezier(.81, .05, .355, 1)
+}
+.state-loading.-init .ball-container.-animate>.path>.ball>.rotation>.states>.start {
+	opacity: 0;
+	transition: opacity .25s
+}
+.state-loading.-init .ball-container.-animate>.path>.ball>.rotation>.states>.blur {
+	opacity: 1
+}
+@-webkit-keyframes rotate {
+	0% {
+		-webkit-transform: translate(-50%, -50%) rotate(0);
+		transform: translate(-50%, -50%) rotate(0)
+	}
+	to {
+		-webkit-transform: translate(-50%, -50%) rotate(1turn);
+		transform: translate(-50%, -50%) rotate(1turn)
+	}
+}
+@keyframes rotate {
+	0% {
+		-webkit-transform: translate(-50%, -50%) rotate(0);
+		transform: translate(-50%, -50%) rotate(0)
+	}
+	to {
+		-webkit-transform: translate(-50%, -50%) rotate(1turn);
+		transform: translate(-50%, -50%) rotate(1turn)
+	}
+}
+@-webkit-keyframes spinToSlow {
+	0% {
+		-webkit-transform: translate(-50%, -50%) rotate(0deg);
+		transform: translate(-50%, -50%) rotate(0deg)
+	}
+	1% {
+		-webkit-transform: translate(-50%, -50%) rotate(1turn);
+		transform: translate(-50%, -50%) rotate(1turn)
+	}
+	2% {
+		-webkit-transform: translate(-50%, -50%) rotate(2turn);
+		transform: translate(-50%, -50%) rotate(2turn)
+	}
+	3% {
+		-webkit-transform: translate(-50%, -50%) rotate(3turn);
+		transform: translate(-50%, -50%) rotate(3turn)
+	}
+	4.3% {
+		-webkit-transform: translate(-50%, -50%) rotate(4turn);
+		transform: translate(-50%, -50%) rotate(4turn)
+	}
+	6.4% {
+		-webkit-transform: translate(-50%, -50%) rotate(5turn);
+		transform: translate(-50%, -50%) rotate(5turn)
+	}
+	21.6% {
+		-webkit-transform: translate(-50%, -50%) rotate(6turn);
+		transform: translate(-50%, -50%) rotate(6turn)
+	}
+	34.3% {
+		-webkit-transform: translate(-50%, -50%) rotate(7turn);
+		transform: translate(-50%, -50%) rotate(7turn)
+	}
+	51.2% {
+		-webkit-transform: translate(-50%, -50%) rotate(8turn);
+		transform: translate(-50%, -50%) rotate(8turn)
+	}
+	72.9% {
+		-webkit-transform: translate(-50%, -50%) rotate(9turn);
+		transform: translate(-50%, -50%) rotate(9turn)
+	}
+	to {
+		-webkit-transform: translate(-50%, -50%) rotate(13turn);
+		transform: translate(-50%, -50%) rotate(13turn)
+	}
+}
+@keyframes spinToSlow {
+	0% {
+		-webkit-transform: translate(-50%, -50%) rotate(0deg);
+		transform: translate(-50%, -50%) rotate(0deg)
+	}
+	1% {
+		-webkit-transform: translate(-50%, -50%) rotate(1turn);
+		transform: translate(-50%, -50%) rotate(1turn)
+	}
+	2% {
+		-webkit-transform: translate(-50%, -50%) rotate(2turn);
+		transform: translate(-50%, -50%) rotate(2turn)
+	}
+	3% {
+		-webkit-transform: translate(-50%, -50%) rotate(3turn);
+		transform: translate(-50%, -50%) rotate(3turn)
+	}
+	4.3% {
+		-webkit-transform: translate(-50%, -50%) rotate(4turn);
+		transform: translate(-50%, -50%) rotate(4turn)
+	}
+	6.4% {
+		-webkit-transform: translate(-50%, -50%) rotate(5turn);
+		transform: translate(-50%, -50%) rotate(5turn)
+	}
+	21.6% {
+		-webkit-transform: translate(-50%, -50%) rotate(6turn);
+		transform: translate(-50%, -50%) rotate(6turn)
+	}
+	34.3% {
+		-webkit-transform: translate(-50%, -50%) rotate(7turn);
+		transform: translate(-50%, -50%) rotate(7turn)
+	}
+	51.2% {
+		-webkit-transform: translate(-50%, -50%) rotate(8turn);
+		transform: translate(-50%, -50%) rotate(8turn)
+	}
+	72.9% {
+		-webkit-transform: translate(-50%, -50%) rotate(9turn);
+		transform: translate(-50%, -50%) rotate(9turn)
+	}
+	to {
+		-webkit-transform: translate(-50%, -50%) rotate(13turn);
+		transform: translate(-50%, -50%) rotate(13turn)
+	}
+}
