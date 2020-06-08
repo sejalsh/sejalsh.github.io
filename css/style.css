@@ -124,7 +124,7 @@ img {
 .btn.btn-primary {
 	background: #1FAD9F;
 	border-color: #1FAD9F;
-	color: #fff;
+	color: white;
 	font-size: 1em;
 }
 .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
@@ -132,24 +132,24 @@ img {
 	background: #178277;
 }
 .btn-light {
-	color: #000;
+	color: black;
 	background-color: #eee;
 	border-color: #eee;
 }
 .btn.btn-light:hover, .btn.btn-light:focus, .btn.btn-light:active {
 	border-color: #e1e1e1;
 	background: #e1e1e1;
-	color: #000;
+	color: black;
 }
 .btn-dark {
-	color: #fff;
+	color: white;
 	background-color: #212529;
 	border-color: #212529;
 }
 .btn.btn-dark:hover, .btn.btn-dark:focus, .btn.btn-dark:active {
-	border-color: #000;
-	background: #000;
-	color: #fff;
+	border-color: black;
+	background: black;
+	color: white;
 }
 /* Buttons - end */
 
@@ -192,7 +192,7 @@ section:after {
     margin-right: 1.5em;
 }
 .navbar {
-	background-color: #fff;
+	background-color: white;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -214,14 +214,14 @@ section:after {
 .navbar a {
     color:inherit;
     float: right;
-    color: #000;
+    color: black;
     border-left: 1px solid none;
     text-align: center;
     padding: 1em 1.2em;
     text-decoration: none;
 }
 .navbar a:hover {
-	color: #000;
+	color: black;
 	outline: none;
 }
 .current {
@@ -360,7 +360,7 @@ a {
 }
 a:hover {
 	color: #178277;
-	outline: none;
+	text-decoration: none;
 }
 /* Text content - end */
 
