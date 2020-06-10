@@ -92,7 +92,7 @@ body {
     text-rendering: optimizeLegibility;
     background: #fff;
 	color: #111;
-    margin: 6em 0 1em 0;
+    margin: 5em 0 1em 0;
 }
 img {
     width: 100%;
@@ -276,6 +276,7 @@ section:after {
 }
 .gallery {
     margin: 0 auto;
+    color: black;
 }
 .gallery:hover {
     
