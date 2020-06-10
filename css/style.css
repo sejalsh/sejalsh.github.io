@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800');
 .mb-1 {
     margin-bottom: -0.5em;
 }
@@ -88,7 +88,7 @@ html {
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Inter', sans-serif;
     text-rendering: optimizeLegibility;
     background: #fff;
 	color: #111;
@@ -327,7 +327,7 @@ h5 {
 
 p {
 	font-size: 1.1em;
-    line-height: 1.5em;
+    line-height: 1.6em;
     color: #666;
     margin-top: 0
 }
