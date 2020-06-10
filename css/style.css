@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Proxima Nova:400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,800');
 .mb-1 {
     margin-bottom: -0.5em;
 }
@@ -88,7 +88,7 @@ html {
 }
 
 body {
-	font-family: 'Proxima Nova', sans-serif;
+	font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
     background: #fff;
 	color: #111;
