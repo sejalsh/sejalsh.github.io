@@ -215,7 +215,7 @@ section:after {
     height: 3em;
     -webkit-backdrop-filter: blur(4em);
     backdrop-filter: blur(4em);
-    background-color: rgba(255, 255, 255, 0.75); 
+    background-color: rgba(255, 255, 255, 0.85); 
     z-index: 999;
 }
 .disable {
