@@ -2,6 +2,12 @@
   margin: 1.5em 1em;
 }
 
+@media only screen and (max-width: 414px) {
+  .item {
+    margin: 1.5em 1em;
+}
+}
+
 .atlassian-role-card {
   align-items: flex-start;
   gap: 1em;
