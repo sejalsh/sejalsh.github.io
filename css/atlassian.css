@@ -1,0 +1,99 @@
+.atlassian-role-card {
+  align-items: flex-start;
+  gap: 1em;
+  margin: 0.25em 0 0.75em 0;
+}
+
+.atlassian-role-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.atlassian-role-card__header-row {
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+.atlassian-role-card__brand {
+  width: 48px;
+  height: 48px;
+}
+
+.atlassian-role-card__mark {
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  -webkit-mask: url("../icons/workplaces/atlassian.svg") center / contain no-repeat;
+  mask: url("../icons/workplaces/atlassian.svg") center / contain no-repeat;
+}
+
+.atlassian-role-card__content {
+  display: flex;
+  flex-direction: column;}
+
+.atlassian-role-card__title {
+  display: flex;
+
+}
+
+.atlassian-role-card__title h3 {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.atlassian-role-card__company a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  font-weight: 700;
+}
+
+.atlassian-role-card__company-name {
+  margin: 0;
+}
+
+.atlassian-role-card__pills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25em;
+  margin-top: 0.25em;
+}
+
+.atlassian-role-card__pill {
+  background: #eee;
+  color: #666;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75em 1.35em;
+  font-size: 1.1em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .atlassian-role-card__header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .atlassian-role-card__content {
+    align-items: flex-start;
+  }
+  .atlassian-role-card__pills {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .atlassian-role-card__pill {
+    white-space: normal;
+  }
+}
+
