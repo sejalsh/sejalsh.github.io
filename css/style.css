@@ -21,6 +21,47 @@
   margin: 0.2em 0;
 }
 
+.tag-year {
+    background: #ffffff;
+    color: #666;
+    border: 1px solid #666;
+    display: inline-block;
+    height: 2em;
+    font-size: 0.75em;
+    line-height: 2em;
+    padding: 0 1em;
+    position: relative;
+    text-decoration: none;
+    border-radius: 1em;
+    -webkit-transition: color 0.2s;
+    margin: 0.2em 0;
+  }
+
+  /* start - overlapping year tag */
+
+  .gallery-tag {
+    position: relative;
+    left: 14px;
+    bottom: 40px;
+    z-index: 2;
+    background: #ffff;
+    color: #4e4e4e;
+    opacity: 0.8;
+    display: inline-block;
+    height: 2em;
+    font-size: 0.75em;
+    line-height: 2em;
+    padding: 0 1em;
+    text-decoration: none;
+    border-radius: 1em;
+    -webkit-transition: color 0.2s;
+    margin: 0.2em 0;
+  }
+  
+/* end - overlapping year tag */
+
+  
+
 /* Table - start */
 table {
   border-collapse: collapse;
