@@ -224,7 +224,7 @@ img {
 	text-align: center;
 	border-radius: .5em;
 	font-size: .5em;
-	margin-top: 2em/* Position the tooltip */
+	margin-top: 2em;/* Position the tooltip */
 	position: absolute;
 	z-index: 10;
 }
@@ -565,7 +565,7 @@ footer {
 		background-color: #000;
 		color: #fff;
 	}
-    h1, h2, h3, h4, h5, {
+    h1, h2, h3, h4, h5 {
         color: #fff;
     }
     p {
