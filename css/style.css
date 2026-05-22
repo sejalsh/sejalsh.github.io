@@ -343,6 +343,11 @@ section:after {
     float: left;
     width: 50%;
 }
+.responsive-three {
+    padding: 1em;
+    float: left;
+    width: 33.33%;
+}
 .responsive-four {
     width: 25%;
     float: left;
@@ -468,6 +473,9 @@ footer {
 .column-two {
     width: 50%;
 }
+.column-three {
+    width: 33.33%;
+}
 .column-four {
     width: 25%;
 }
@@ -482,6 +490,9 @@ footer {
     .responsive-two {
         width: 100%;
     }
+    .responsive-three {
+        width: 33.33%;
+    }
     .responsive-four {
         width: 50%;
     }
@@ -492,6 +503,9 @@ footer {
 @media only screen and (max-width: 768px) {
     .responsive-two {
 		width: 50%;
+	} 
+    .responsive-three {
+		width: 33.33%;
 	} 
     .info {
 	max-width: 100%;
@@ -509,6 +523,9 @@ footer {
         padding: 0.75em 1em 0.5em 1em;
 	}  
     .responsive-two {
+		width: 100%;
+	} 
+    .responsive-three {
 		width: 100%;
 	} 
     .item {
