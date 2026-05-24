@@ -577,6 +577,10 @@ footer {
 }
 
 
+video { 
+    width: 100%; 
+    max-width: 2880px;}
+
 /*
 @media (prefers-color-scheme: dark) {
 	body {
