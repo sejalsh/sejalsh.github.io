@@ -335,8 +335,12 @@ section:after {
 .responsive {
     padding: 1em;
 	float: left;
+	width: 33.33%; 
+}
+.responsive-tile {
+    padding: 1em;
+	float: left;
 	width: 33.33%;
-    
 }
 .responsive-two {
     padding: 0.5em 1em 0.75em 1em;
@@ -353,6 +357,7 @@ section:after {
     float: left;
     padding: 1em;
 }
+
 .gallery {
     margin: 0 auto;
     color: black;
@@ -488,6 +493,9 @@ footer {
     .responsive {
 		width: 50%;
 	}
+    .responsive-tile {
+		width: 50%;
+	}
     .responsive-two {
         width: 100%;
     }
@@ -522,7 +530,12 @@ footer {
     .responsive {
 		width: 100%;
         padding: 0.75em 1em 0.5em 1em;
-	}  
+	} 
+    .responsive-tile {
+		width: 100%;
+        padding: 0.75em 1em 0.5em 1em;
+        margin-bottom: 2em;
+	} 
     .responsive-two {
 		width: 100%;
 	} 
